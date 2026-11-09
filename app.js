@@ -1,4 +1,6 @@
 // app.js : 영화 배열을 다루는 함수 6개 / 허은서(26) / 10주차
+
+(function () {
 //영화 배열 ⇒ 평균 평점(숫자)
 const average = (list) => {
     let sum = 0;
@@ -11,13 +13,8 @@ console.log("평균:", average(movies));
 
 //영화 배열 ⇒ 평점이 가장 높은 영화 객체
 const best = (list) => {
-    let top = list[0];
-    for (const m of list) {
-        if (m.rating > top.rating) {
-            top = m;
-        }
-    }
-    return top;
+    const max = Math.max(...list.map(m => m.rating));
+    return list.find(m => m.rating === max);
 }
 console.log("최고:", best(movies).title);
 
@@ -49,3 +46,12 @@ console.log(posterUrl(movies[0].poster, "w342"));
 document.title = "내 영화 " + movies.length + "편";
 console.table(sortByRating(movies));
 document.getElementById("out").textContent = "평균 " + average(movies).toFixed(1) + "점, 최고 " + best(movies).title;
+
+const boxTop = {
+    title: "왕과 사는 남자 포스터",
+    audience: 9407753
+}
+console.log(
+    boxTop.audience.toLocaleString("ko-KR") + "명"
+);
+})();
