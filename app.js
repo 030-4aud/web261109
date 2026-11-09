@@ -51,7 +51,5 @@ const boxTop = {
     title: "왕과 사는 남자 포스터",
     audience: 9407753
 }
-console.log(
-    boxTop.audience.toLocaleString("ko-KR") + "명"
-);
+console.log(boxTop.audience.toLocaleString("ko-KR") + "명");
 })();
