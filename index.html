@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>허은서 :: 내 영화 보드</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Batang&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="stats"></p>
+    <script src="script.js"></script>
+    <header class="top">
+        <h1>내 영화 보드</h1>
+        <nav>
+            <ul>
+                <li><a href="#mine">보드</a></li>
+                <li><a href="#boxoffice">소개</a></li>
+                <li><a href="detail.html">상세</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>요즘 내가 고른 영화 다섯 편</h2>
+        <p>포스터 위에 마우스를 올려 보세요.</p>
+    </section>
+
+    <main>
+        <section id="mine">
+            <h2>내 인생 영화 5편</h2>
+            <div class="board">
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/hNnh0cwtv5iQ1ErTSZXMbo1Q2Rl.jpg"
+                        alt="The Passion of the Christ 포스터">
+                    <span class="badge">7.5</span>
+                    <div class="info">
+                        <h3>The Passion of the Christ</h3>
+                        <p class="year">2004-02-25</p>
+                        <p class="overview">골고다 언덕 위에서 예수 그리스도는 십자가에 못 박히게 되고 그 곳에서 마지막 유혹에 직면한다.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/v5URBLEZCtICf0DsnEztdrAs4dD.jpg"
+                        alt="A.I. (Artificial Intelligence) 포스터">
+                    <span class="badge">7.0</span>
+                    <div class="info">
+                        <h3>A.I. (Artificial Intelligence)</h3>
+                        <p class="year">2001-06-29</p>
+                        <p class="overview">어느 날 하비 박사는 로봇회사인 사이버트로닉스사에서 감정을 지닌 최초의 인공지능 로봇 데이비드를 탄생시킨다.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg"
+                        alt="Avengers: Infinity War 포스터">
+                    <span class="badge">8.2</span>
+                    <div class="info">
+                        <h3>Avengers: Infinity War</h3>
+                        <p class="year">2018-04-25</p>
+                        <p class="overview">타노스는 닥터 스트레인지가 소유한 타임 스톤, 비전의 이마에 박혀 있는 마인드 스톤을 차지하기 위해 지구를 침략한다.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/3yNm2SdzdcXYXv8D7cS9RV5H6DG.jpg"
+                        alt="Cinderella 포스터">
+                    <span class="badge">6.8</span>
+                    <div class="info">
+                        <h3>Cinderella</h3>
+                        <p class="year">2015-03-06</p>
+                        <p class="overview">어린 시절 어머니를 여의고, 새엄마와 그녀의 두 딸과 함께 살게 된 엘라는 무역상인 아버지마저 타지에서 돌아가시자 새엄마와 의붓 언니들은
+                            엘라를
+                            재투성이라는 뜻의 신데렐라라고 부르며 온갖 구박을 일삼는다.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/132KjhVrWUqKFVfMAKKNkherytA.jpg"
+                        alt="Titanic 포스터">
+                    <span class="badge">7.9</span>
+                    <div class="info">
+                        <h3>Titanic</h3>
+                        <p class="year">1997-12-18</p>
+                        <p class="overview">우연한 기회로 티켓을 구해 타이타닉호에 올라탄 자유로운 영혼을 가진 화가 ‘잭’은 막강한 재력의 약혼자와 함께 1등실에 승선한
+                            ‘로즈’에게
+                            한눈에 반한다.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="boxoffice">
+            <h2>일별 박스오피스 TOP 5</h2>
+            <p class="basis">KOBIS 기준일 2026-03-03</p>
+            <div class="board">
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/kkJB3SeUJp7Y0IXXLkv5QZHJGkH.jpg"
+                        alt="왕과 사는 남자 포스터">
+                    <span class="rank">1</span>
+                    <span class="badge">6.9</span>
+                    <div class="info">
+                        <h3>왕과 사는 남자</h3>
+                        <p class="year">개봉 2026-02-04</p>
+                        <p class="audience">누적 9,407,753명</p>
+                        <p class="change">-</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/f7sCSLEPRfV2fWQ0RYOtHhnHXuG.jpg"
+                        alt="휴민트 포스터">
+                    <span class="rank">2</span>
+                    <span class="badge">7.4</span>
+                    <div class="info">
+                        <h3>휴민트</h3>
+                        <p class="year">개봉 2026-02-11</p>
+                        <p class="audience">누적 1,874,426명</p>
+                        <p class="change">-</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/yuHnj0FAxZGT2gAQDNMI16luf8Q.jpg"
+                        alt="초속 5센티미터">
+                    <span class="rank">3</span>
+                    <span class="badge">7.9</span>
+                    <div class="info">
+                        <h3>초속 5센티미터</h3>
+                        <p class="year">개봉 2025-10-10</p>
+                        <p class="audience">누적 71,293명</p>
+                        <p class="change up">2</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/ubgOSHAEhv1ds8BNHodhCcI13oH.jpg"
+                        alt="28년 후: 뼈의 사원">
+                    <span class="rank">4</span>
+                    <span class="badge">7.1</span>
+                    <div class="info">
+                        <h3>28년 후: 뼈의 사원</h3>
+                        <p class="year">개봉 2026-01-14</p>
+                        <p class="audience">누적 29,175명</p>
+                        <p class="change up">3</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w342/oZr1zCBbxMf1Z2XerqOw4oPvvWE.jpg"
+                        alt="신의악단">
+                    <span class="rank">5</span>
+                    <span class="badge">6.8</span>
+                    <div class="info">
+                        <h3>신의악단</h3>
+                        <p class="year">개봉 2025-12-31</p>
+                        <p class="audience">누적 1,405,190명</p>
+                        <p class="change down">1</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
+            This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+        <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
+        <p>박스오피스 데이터: 영화진흥위원회 영화관입장권통합전산망(KOBIS), 기준일 2026-03-03</p>
+    </footer>
+</body>
+
+</html>
